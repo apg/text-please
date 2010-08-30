@@ -1,0 +1,32 @@
+body {
+ font-size: 62.5%;
+ font-family: Arial;
+ color: #888;
+ margin: 0;
+ padding: 0;
+}
+
+h1, h2 {
+ font-family: Georgia;
+}
+
+h1 {
+ font-size: 3.0em;
+}
+
+h2 {
+ font-size: 2.0em;
+}
+
+#wrapper {
+ margin: 30px 20px;
+}
+
+#copy {
+ margin-top: 30px;
+}
+#copy p {
+ font-size: 1.6em;
+}
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+   <title>Text Please!</title> 
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+   <meta http-equiv="Content-Language" content="en-us" /> 
+   <meta name="ROBOTS" content="all" /> 
+   <meta name="googlebot" content="noodp" /> 
+   <meta name="MSSmartTagsPreventParsing" content="true" /> 
+
+   <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+</head> 
+<body> 
+   <div id="wrapper"> 
+      <div id="content"> 
+         <div id="form">
+            <h1>Just the text please!</h1>
+            <form method="get" action="/text/extract.md">
+               <p>
+                  <input type="text" name="url" size="40" /><input type="submit" value="Just the Text!" />
+               </p>
+            </form>
+         </div>
+         <div id="copy">
+            <h2>What is this?</h2>
+            <p>This site attempts to extract the relevant text from a webpage. It doesn't always work, but when it does, it can display the results in <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>, or plain HTML.</p>
+
+            <h2>Why?</h2>
+            <p>I wanted to be able to read articles easily from <a href="http://www.gnu.org/software/emacs/">GNU Emacs</a> without having to load up a browser such as w3m. I wrote a simple mode, available on <a href="http://github.com/apgwoz/thumb-through/">github</a>, which uses this app to pull the article text and show it in a buffer. That mode is certainly still evolving, but it's usable now.</p>
+            <h2>You said some pages will not work, what else should I know?</h2>
+            <p>There is some rate limiting in place, by IP address, which amounts to about 20 unique URLs per hour. However, if someone else requests the same URL, and it's still cached, it doesn't go against your rate limiting.</p>
+            <p>To get HTML, just change <code>/text/extract.md</code> to <code>/text/extract.html</code>.</p>
+
+            <h2>Who's behind this?</h2>
+            <p><a href="http://apgwoz.com">Andrew Gwozdziewycz</a> is. Though, it uses libraries written by other people, such as <a href="http://www.aaronsw.com/2002/html2text/">html2text.py</a>, and <a href="http://github.com/gfxmonk/python-readability">python-readability</a>.</p>
+               
+         </div>
+      </div> 
+   </div> 
+   <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"> 
+   </script> 
+   <script type="text/javascript"> 
+      _uacct = "UA-354660-15";
+      urchinTracker();
+   </script> 
+</body> 
+</html> 
+ 
